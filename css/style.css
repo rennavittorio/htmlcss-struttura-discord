@@ -36,6 +36,11 @@ img {
 .container {
     max-width: 900px;
     margin: 0 auto;
+    padding: 15px;
+}
+
+.row, .col {
+    padding: 15px;
 }
 
 .home-main {
@@ -56,6 +61,10 @@ img {
 /* fine layout rules */
 
 /* layout header (2 sec: nav + header) */
+.bg-header {
+    background-color: cyan;
+}
+
 .row-nav {
     justify-content: space-between;
     text-align: center;
