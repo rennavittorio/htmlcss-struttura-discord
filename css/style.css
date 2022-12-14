@@ -22,6 +22,10 @@ img {
     padding: 15px;
 }
 
+.debug header {
+    background-color: cyan;
+}
+
 /* fine debugging section */
 
 /* high-level layout rules */
@@ -43,19 +47,30 @@ img {
 }
 /* fine layout rules */
 
-/* layout header */
-.row-header {
+/* layout header (2 sec: nav + header) */
+.row {
     display: flex;
+}
+
+.row-nav {
     justify-content: space-between;
     text-align: center;
 }
 
-.row-header > .col-links {
+.row-nav > .col-links {
     flex-grow: 1;
 }
 
-.row-header > .col:not(.col-links) {
+.row-nav > .col:not(.col-links) {
     flex-basis: calc(100% / 5);
 }
 
+.row-header{
+    justify-content: center;
+}
+
+.row-header > .col {
+    flex-basis: 700px;
+    min-height: 200px;
+}
 /* fine layout header */
