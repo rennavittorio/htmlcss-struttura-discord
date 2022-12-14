@@ -91,3 +91,30 @@ img {
 }
 
 /* fine layout main */
+
+/* layout footer, 2 sections (1 info section, 1 logo+button) */
+.bg-foot {
+    background-color: black;
+    color: white;
+}
+
+.row-foot-5-col > .col {
+    flex-basis: calc(100% / 6);
+    min-height: 100px;
+}
+
+.row-foot-5-col > .col:first-child {
+    flex-basis: calc((100% / 6) * 2);
+    min-height: 250px;
+}
+
+.row-foot-2-col {
+    justify-content: space-between;
+}
+
+.row-foot-2-col > .col {
+    flex-basis: calc(100% / 5);
+    text-align: center;
+}
+
+/* fine layout footer */
