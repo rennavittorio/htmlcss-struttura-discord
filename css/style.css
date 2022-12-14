@@ -49,6 +49,10 @@ img {
 .row {
     display: flex;
 }
+
+.row.reverse {
+    flex-direction: row-reverse;
+}
 /* fine layout rules */
 
 /* layout header (2 sec: nav + header) */
@@ -76,19 +80,15 @@ img {
 /* fine layout header */
 
 /* layout main (3 double-col sections + 1 mono-col) */
-.row-main-2-col > .col {
+.row-main-2-col > .col-text {
     flex-basis: calc(100% / 3);
     min-height: 200px;
 }
 
-/* .row-main-2-col > .col:first-child {
+.row-main-2-col > .col-img {
     flex-basis: calc((100% / 3) * 2);
     min-height: 200px;
-} */
-/* 
-.row-main-2-col:nth-child(2) {
-    flex-direction: row-reverse;
-} */
+}
 
 .row-main-1-col > .col {
     flex-basis: 100%;
