@@ -1,0 +1,40 @@
+/* reset rules */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* fine reset rules */
+
+/* debugging section */
+.debug .container {
+    border: 2px dashed tomato;
+    padding: 15px;
+}
+
+/* fine debugging section */
+
+/* layout rules */
+.full-container {
+    background-color: lightgrey;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.home-main {
+    min-height: 500px;
+}
+
+.home-footer {
+    min-height: 250px;
+}
+
+/* fine layout rules */
