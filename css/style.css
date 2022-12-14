@@ -45,13 +45,13 @@ img {
 .home-footer {
     min-height: 250px;
 }
-/* fine layout rules */
 
-/* layout header (2 sec: nav + header) */
 .row {
     display: flex;
 }
+/* fine layout rules */
 
+/* layout header (2 sec: nav + header) */
 .row-nav {
     justify-content: space-between;
     text-align: center;
@@ -77,9 +77,18 @@ img {
 
 /* layout main (3 double-col sections + 1 mono-col) */
 .row-main-2-col > .col {
-    flex-basis: calc(100% / 2);
+    flex-basis: calc(100% / 3);
     min-height: 200px;
 }
+
+/* .row-main-2-col > .col:first-child {
+    flex-basis: calc((100% / 3) * 2);
+    min-height: 200px;
+} */
+/* 
+.row-main-2-col:nth-child(2) {
+    flex-direction: row-reverse;
+} */
 
 .row-main-1-col > .col {
     flex-basis: 100%;
