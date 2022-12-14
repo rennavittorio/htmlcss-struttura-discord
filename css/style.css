@@ -74,3 +74,16 @@ img {
     min-height: 200px;
 }
 /* fine layout header */
+
+/* layout main (3 double-col sections + 1 mono-col) */
+.row-main-2-col > .col {
+    flex-basis: calc(100% / 2);
+    min-height: 200px;
+}
+
+.row-main-1-col > .col {
+    flex-basis: 100%;
+    min-height: 200px;
+}
+
+/* fine layout main */
