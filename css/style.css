@@ -17,9 +17,14 @@ img {
     padding: 15px;
 }
 
+.debug .row, .debug .col {
+    border: 2px dashed cornflowerblue;
+    padding: 15px;
+}
+
 /* fine debugging section */
 
-/* layout rules */
+/* high-level layout rules */
 .full-container {
     background-color: lightgrey;
 }
@@ -36,5 +41,21 @@ img {
 .home-footer {
     min-height: 250px;
 }
-
 /* fine layout rules */
+
+/* layout header */
+.row-header {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.row-header > .col-links {
+    flex-grow: 1;
+}
+
+.row-header > .col:not(.col-links) {
+    flex-basis: calc(100% / 5);
+}
+
+/* fine layout header */
