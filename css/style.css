@@ -86,4 +86,8 @@ img {
     min-height: 200px;
 }
 
+.bg-main:nth-child(odd) {
+    background-color: white;
+}
+
 /* fine layout main */
